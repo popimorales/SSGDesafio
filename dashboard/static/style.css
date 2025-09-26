@@ -1,0 +1,143 @@
+body {
+  background: linear-gradient(to bottom right, #FFE5B4, #FFD580);
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 70px; /* ajusta según la altura de tu navbar */
+}
+
+.navbar {
+  background-color: #800020;
+}
+
+.btn-primary {
+  background-color: #FF6F00;
+  border-color: #FF6F00;
+}
+.btn-primary:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+/* -------------------- Alerta Modal -------------------- */
+.modal-alert {
+  display: none;
+}
+/* -------------------- KPIs -------------------- */
+.card-kpi {
+  border-left: 6px solid #800020;
+  transition: transform 0.2s ease;
+}
+.card-kpi:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.kpi-title {
+  color: #800020;
+  font-weight: 600;
+}
+.kpi-value {
+  color: #FF6F00;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+  background-color: #800020;
+  color: #fff;
+}
+
+/* -------------------- Snapshots Table -------------------- */
+.table thead {
+  background-color: #800020;
+  color: #fff;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255,111,0,0.1);
+}
+
+/* -------------------- Agentes Activos Card -------------------- */
+.card-agentes {
+  background: linear-gradient(135deg, #ffe5e5, #ffb3b3);
+  border: 1px solid #ff4d4d;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cantidad de agentes */
+#cant-activos {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #800000;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+#cant-activos + .text-muted {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #550000;
+}
+
+/* Tabla de agentes */
+.table-responsive {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#lista-agentes, 
+#lista-agentes th, 
+#lista-agentes td {
+  background-color: transparent; /* para que se vea el degradado del card */
+  border: none;
+  color: #800000;
+}
+
+#lista-agentes th {
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ff4d4d;
+}
+
+#lista-agentes td {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#lista-agentes tr:hover {
+  background-color: rgba(255, 77, 77, 0.1);
+}
+
+/* Opcional: esquinas redondeadas de tabla */
+#lista-agentes tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+#lista-agentes tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+#lista-agentes tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+#lista-agentes tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* -------------------- Altura consistente Chart + Card -------------------- */
+.card-agentes, 
+.card canvas {
+  min-height: 350px;
+}
+
+/* -------------------- Gráfico flex-grow -------------------- */
+.card canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+    
